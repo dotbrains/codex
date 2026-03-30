@@ -1,0 +1,30 @@
+# ============================================
+# Codex CLI Runtime — Auto-generated data
+# ============================================
+
+# Session & transcript data
+sessions/
+
+# Logs
+logs/
+
+# Auth credentials (NEVER track)
+auth.json
+
+# History
+history.jsonl
+
+# ============================================
+# OS & Editor artifacts
+# ============================================
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ============================================
+# Secrets — NEVER track
+# ============================================
+*.env
+.env.*
+credentials.*

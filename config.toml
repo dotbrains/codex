@@ -1,0 +1,15 @@
+# Codex CLI — Global Configuration
+# https://developers.openai.com/codex/config-reference
+
+# Model selection
+model = "o3"
+
+# Approval mode for file changes and commands
+# Options: suggest, auto-edit, full-auto
+approval_mode = "suggest"
+
+# MCP (Model Context Protocol) server configuration
+[mcp_servers]
+[mcp_servers.context-mode]
+command = "npx"
+args = ["-y", "context-mode"]
