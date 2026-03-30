@@ -2,7 +2,7 @@
 # https://developers.openai.com/codex/config-reference
 
 # Model selection
-model = "o3"
+model = "gpt-5.4"
 
 # Approval mode for file changes and commands
 # Options: suggest, auto-edit, full-auto
