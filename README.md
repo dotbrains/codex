@@ -30,6 +30,7 @@ brew install openai/tap/codex
 - `shared/` — Shared AI config submodule ([dotbrains/shared-ai-config](https://github.com/dotbrains/shared-ai-config))
 - `frontmatter/` — Codex-specific TOML frontmatter for agents
 - `PLUGINS.md` — External MCP servers and plugins ([details](PLUGINS.md))
+- `RULES.md` — Rule definitions and usage ([details](RULES.md))
 
 ### Agents
 
