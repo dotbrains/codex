@@ -69,3 +69,14 @@ git submodule update --remote shared
 ## License
 
 This project is licensed under the [PolyForm Shield License 1.0.0](https://polyformproject.org/licenses/shield/1.0.0/) -- see [LICENSE](LICENSE) for details.
+
+## Fallback Rules (Notion + Linear)
+
+If your workspace blocks MCP OAuth flows, this config includes sandbox rules that allow the local CLI tools to run without prompting:
+
+- `rules/default.rules` — allows `linear` and `notion` CLI commands (powered by `@dotbrains/linear-cli` and `@dotbrains/notion-cli`)
+
+Setup and usage instructions are documented in `PLUGINS.md` under:
+
+- **Linear - Fallback: linear-cli (when MCP auth is blocked)**
+- **Notion - Fallback: notion-cli (when MCP auth is blocked)**

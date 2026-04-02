@@ -1,0 +1,23 @@
+# Allow linear CLI to run outside the sandbox without prompting.
+prefix_rule(
+    pattern = ["linear"],
+    decision = "allow",
+    justification = "Linear CLI fallback when MCP auth is blocked",
+    match = [
+        "linear search auth bug",
+        "linear issue ENG-123",
+        "linear init",
+    ],
+)
+
+# Allow notion CLI to run outside the sandbox without prompting.
+prefix_rule(
+    pattern = ["notion"],
+    decision = "allow",
+    justification = "Notion CLI fallback when MCP auth is blocked",
+    match = [
+        "notion search onboarding checklist --json --limit 20",
+        "notion page 01234567-89ab-cdef-0123-456789abcdef --json",
+        "notion init",
+    ],
+)

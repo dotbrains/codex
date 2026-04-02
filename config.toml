@@ -13,3 +13,9 @@ approval_mode = "suggest"
 [mcp_servers.context-mode]
 command = "npx"
 args = ["-y", "context-mode"]
+
+[mcp_servers.linear]
+url = "https://mcp.linear.app/mcp"
+
+[mcp_servers.notion]
+url = "https://mcp.notion.com/mcp"
