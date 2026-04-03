@@ -57,6 +57,18 @@ The contents of this repository should be placed in your `$HOME`.
 git clone --recursive https://github.com/dotbrains/codex.git $HOME/.codex
 ```
 
+### Install Plugins
+
+After cloning, run the plugin installation script:
+
+```bash
+./install-plugins.sh
+```
+
+This installs:
+- `@dotbrains/linear-cli` - Fallback CLI for Linear
+- `@dotbrains/notion-cli` - Fallback CLI for Notion
+
 ## Shared Agent Definitions
 
 Agent and skill body content is shared with [Claude Code](https://github.com/dotbrains/claude) and [OpenCode](https://github.com/dotbrains/opencode) via the [shared-ai-config](https://github.com/dotbrains/shared-ai-config) submodule. To update after shared content changes:
