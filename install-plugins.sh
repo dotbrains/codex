@@ -22,16 +22,6 @@ echo "superpowers is included as a submodule (superpowers/)"
 echo "Installing get-shit-done..."
 npx get-shit-done-cc@latest --codex --global
 
-# linear-cli - fallback for Linear
-echo "Installing linear-cli..."
-npm config set @dotbrains:registry https://npm.pkg.github.com
-npm config set //npm.pkg.github.com/:_authToken "$(gh auth token)" 2>/dev/null || true
-npm install -g @dotbrains/linear-cli
-
-# notion-cli - fallback for Notion
-echo "Installing notion-cli..."
-npm install -g @dotbrains/notion-cli
-
 echo ""
 echo "Done! Restart Codex to load the plugins."
 echo ""
