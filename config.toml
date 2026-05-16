@@ -2,7 +2,8 @@
 # https://developers.openai.com/codex/config-reference
 
 # Model selection
-model = "gpt-5.4"
+model = "gpt-5.5"
+model_reasoning_effort = "low"
 
 # Approval mode for file changes and commands
 # Options: suggest, auto-edit, full-auto
@@ -13,9 +14,3 @@ approval_mode = "suggest"
 [mcp_servers.context-mode]
 command = "npx"
 args = ["-y", "context-mode"]
-
-[mcp_servers.linear]
-url = "https://mcp.linear.app/mcp"
-
-[mcp_servers.notion]
-url = "https://mcp.notion.com/mcp"
