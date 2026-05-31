@@ -1,0 +1,18 @@
+version = 1
+
+# Reproducible helper toolchain for the Codex configuration.
+#
+# Activate with `flox activate` from the codex/ directory to get bash and
+# nodejs for plugin assembly scripts and the superpowers package metadata.
+
+[install]
+bash.pkg-path = "bash"
+nodejs.pkg-path = "nodejs_20"
+
+[options]
+systems = [
+  "aarch64-darwin",
+  "x86_64-darwin",
+  "aarch64-linux",
+  "x86_64-linux",
+]
