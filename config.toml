@@ -9,6 +9,13 @@ model_reasoning_effort = "low"
 # Options: suggest, auto-edit, full-auto
 approval_mode = "suggest"
 
+# TUI footer status line. Unlike Claude Code's statusLine, this only accepts
+# Codex's fixed set of built-in item ids (no custom script, no git branch,
+# no cost/duration): model, approval, context_usage, session_id, sandbox,
+# cwd, spinner. See https://github.com/openai/codex/issues/20244.
+[tui]
+status_line = ["model", "cwd", "context_usage", "approval"]
+
 # MCP (Model Context Protocol) server configuration
 [mcp_servers]
 [mcp_servers.context-mode]
