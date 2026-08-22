@@ -4,12 +4,3 @@
 [submodule "superpowers"]
 	path = superpowers
 	url = https://github.com/obra/superpowers.git
-[submodule "third-party/agent-skills"]
-	path = third-party/agent-skills
-	url = https://github.com/addyosmani/agent-skills.git
-[submodule "third-party/caveman"]
-	path = third-party/caveman
-	url = https://github.com/JuliusBrussee/caveman.git
-[submodule "third-party/skills"]
-	path = third-party/skills
-	url = https://github.com/dotbrains/skills
