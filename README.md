@@ -68,6 +68,7 @@ After cloning, run the plugin installation script:
 This installs:
 - `superpowers` - Complete software development workflow (via submodule)
 - `get-shit-done` - GSD workflow system (via npx)
+- [`ntn`](https://developers.notion.com/cli/get-started/overview) - Official Notion CLI, fallback for Notion
 
 ## Shared Agent Definitions
 
@@ -81,3 +82,13 @@ git submodule update --remote shared
 ## License
 
 This project is licensed under the [PolyForm Shield License 1.0.0](https://polyformproject.org/licenses/shield/1.0.0/) -- see [LICENSE](LICENSE) for details.
+
+## Fallback Rules (Notion)
+
+If your workspace blocks MCP OAuth flows, this config includes sandbox rules that allow the local CLI tool to run without prompting:
+
+- `rules/default.rules` — allows `ntn` CLI commands (the official Notion CLI)
+
+Setup and usage instructions are documented in `PLUGINS.md` under:
+
+- **Notion CLI (ntn)**

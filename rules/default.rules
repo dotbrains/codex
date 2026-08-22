@@ -1,0 +1,11 @@
+# Allow the official Notion CLI (ntn) to run outside the sandbox without prompting.
+prefix_rule(
+    pattern = ["ntn"],
+    decision = "allow",
+    justification = "Notion CLI fallback when MCP auth is blocked",
+    match = [
+        "ntn api v1/search query=\"onboarding checklist\" page_size==20",
+        "ntn pages get 01234567-89ab-cdef-0123-456789abcdef --json",
+        "ntn login",
+    ],
+)
